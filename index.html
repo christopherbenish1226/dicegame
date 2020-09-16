@@ -15,19 +15,26 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
+<body onload="rollDice()">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <script src="main.js" async defer></script>
-    <img src="images/dice1.png" id="dice1Img">
-    <img src="images/dice1.png" id="dice2Img">
+    <div class="dice">
+        <h1>Pair Of Dice</h1>
+        <img src="images/dice1.png" id="dice1Img">
+        <img src="images/dice1.png" id="dice2Img">
+        <br>
+        <button onclick="rollDice()">Roll Dice</button>
+        <h2 id="status">Snake Eyes</h2>
+    </div>
 
 
-    <br>
-    <button onclick="rollDice()">Roll Dice</button>
-    <h2 id="status" style="clear:left;"></h2>
+
+
+
+
 </body>
+<script src="main.js" async defer></script>
 
 </html>
